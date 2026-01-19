@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medicure Clinic | Dr Raheem Beig</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f8fb;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 5px;
+  font-size: 32px;
+}
+
+header p {
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 26px;
+  color: #023e8a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.highlight {
+  background: #e6f4fa;
+  border-left: 6px solid #0077b6;
+}
+
+.services ul {
+  columns: 2;
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.services li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0077b6;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+button, .whatsapp-btn {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.call-btn {
+  background: #0077b6;
+}
+
+.call-btn:hover {
+  background: #023e8a;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+.map-container {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .services ul {
+    columns: 1;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Medicure Clinic</h1>
+  <p>Compassionate • Reliable • Quality Healthcare in Sidlaghatta</p>
+</header>
+
+<section>
+
+  <div class="card highlight">
+    <h2 class="section-title">About the Clinic</h2>
+    <p>
+      Medicure Clinic is a trusted healthcare center in Sidlaghatta,
+      dedicated to providing high-quality, ethical, and patient-focused
+      medical care. We emphasize accurate diagnosis, preventive medicine,
+      and long-term disease management.
+    </p>
+    <p>
+      Known for personalized attention and a calm clinical environment,
+      Medicure Clinic ensures that every patient receives professional
+      and compassionate care.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2 class="section-title">Doctor</h2>
+    <p><strong>Dr Raheem Beig (MBBS)</strong></p>
+    <p>General Physician</p>
+    <p>
+      Dr Raheem Beig has extensive experience in treating acute and chronic
+      medical conditions with a strong focus on lifestyle modification,
+      patient education, and evidence-based treatment.
+    </p>
+  </div>
+
+  <div class="card services">
+    <h2 class="section-title">Services Offered</h2>
+    <ul>
+      <li>Hypertension Management</li>
+      <li>Diabetes Care & Monitoring</li>
+      <li>Fever & Infection Treatment</li>
+      <li>Asthma & COPD Management</li>
+      <li>Sinusitis & Allergic Rhinitis</li>
+      <li>Venous Ulcer Treatment</li>
+      <li>Diabetic Foot Care</li>
+      <li>Primary Burns Management</li>
+      <li>Suturing for Minor Wounds</li>
+      <li>General Medical Consultation</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 class="section-title">Clinic Timings</h2>
+    <p><strong>Morning:</strong> 10:00 AM – 2:00 PM</p>
+    <p><strong>Evening:</strong> 6:00 PM – 9:00 PM</p>
+  </div>
+
+  <div class="card contact-info">
+    <h2 class="section-title">Contact & Location</h2>
+
+    <p><strong>Address:</strong><br>
+      Flower Circle, Ashoka Road,<br>
+      Sidlaghatta – 562105
+    </p>
+
+    <p><strong>Phone:</strong> 8073720401</p>
+    <p><strong>Email:</strong> yaseenbeig14@gmail.com</p>
+
+    <div class="button-group">
+      <a class="call-btn" href="tel:8073720401">Call Now</a>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/918073720401?text=Hello%20Medicure%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment."
+         target="_blank">
+         WhatsApp Appointment
+      </a>
+    </div>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=Medicure+Clinic+Sidlaghatta+562105&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Medicure Clinic | Quality Healthcare You Can Trust
+</footer>
+
+</body>
+</html>
